@@ -140,6 +140,11 @@ main {
   object-fit: cover;
 }
 
+.swiper {
+  width: 100%;
+  aspect-ratio: 1;
+}
+
 .catalog__price {
   display: flex;
   flex-direction: row;
@@ -299,6 +304,7 @@ header {
 .auth {
   max-width: 200px;
   background-color: #ccccff;
+  padding: 20px;
 }
 
 .auth div {
@@ -306,5 +312,23 @@ header {
 }
 
 .auth div:first-child {
-  padding-top: 0px;
+  padding-top: 0;
+}
+
+.auth__value {
+  border-radius: 5px;
+}
+
+.auth__btn {
+  border: none;
+  transition: all 0.3s;
+}
+
+.auth__btn--login {
+  background: blue;
+  color: white;
+}
+
+.auth__btn--registration {
+  color: #6666ff;
 }
