@@ -283,8 +283,24 @@ $radius-btn: 5px;
 .auth {
     max-width: 200px;
     background-color: adjust-color($bg-btn, $lightness:40%);
+    padding: 20px;
+    &__value {
+        border-radius: $radius-btn;
+    }
+    &__btn {
+        border: none;
+        transition: all 0.3s;
+        &--login {
+            background: $bg-btn;
+            color: $color-btn;
+        }
+        &--registration {
+            color: adjust-color($bg-btn, $lightness:20%);
+            background: adjust-color($bg-btn, $blackness:20%);
+        }
+    }
 }
-.auth div {
+.auth input {
     padding-top: 10px;
 }
 .auth div:first-child {
